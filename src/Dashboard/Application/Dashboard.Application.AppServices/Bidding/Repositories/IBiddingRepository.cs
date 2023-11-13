@@ -6,30 +6,30 @@
 // </auto-generated>
 // ------------------------------------------------------------------------------
 
-using Dashboard.Domain.Posts;
+using Dashboard.Domain.Biddings;
 
-namespace Dashboard.Application.AppServices.Contexts.Post.Repositories
+namespace Dashboard.Application.AppServices.Contexts.Bidding.Repositories
 
 {
 /// <summary>
 /// Репозиторий для работы с аукционами.
 /// </summary>
-public interface IPostRepository
+public interface IBiddingRepository
 {
     /// <summary>
     /// Возвращает Аукцион по идентификатору.
     /// </summary>
     /// <param name="id">Идентификатор Аукционы.</param>
     /// <param name="cancellationToken">Отмена операции.</param>
-    /// <returns>Модель Аукционы <see cref="Domain.Posts.Post"/></returns>
-    Task<Domain.Posts.Post> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    /// <returns>Модель Аукционы <see cref="Domain.Biddings.Bidding"/></returns>
+    Task<Domain.Biddings.Bidding> GetByIdAsync(Guid id, CancellationToken cancellationToken);
 
     /// <summary>
     /// Возвращает список -- Аукционы.
     /// </summary>
     /// <param name="cancellationToken">Отмена операции.</param>
-    /// <returns>Список моделей Аукционы <see cref="Domain.Posts.Post"/></returns>
-    IQueryable < Domain.Posts.Post > GetAllAsync(CancellationToken cancellationToken);
+    /// <returns>Список моделей Аукционы <see cref="Domain.Biddings.Bidding"/></returns>
+    IQueryable < Domain.Biddings.Bidding > GetAllAsync(CancellationToken cancellationToken);
 
     /// <summary>
     /// Возвращает список -- Аукционы, постранично в зависимости от размера страницы и индекса страницы.
@@ -38,8 +38,8 @@ public interface IPostRepository
     /// <param name="cancellationToken">Отмена операции.</param>
     /// <param name="pageSize">Размер страницы.</param>
     /// <param name="pageIndex">Номер страницы.</param>
-    /// <returns>Список моделей -- Аукционы <see cref="Domain.Posts.Post"/></returns>
-    //IQueryable < Domain.Posts.Post > GetPageAsync(int pageSize, int pageIndex, CancellationToken cancellationToken);
+    /// <returns>Список моделей -- Аукционы <see cref="Domain.Biddings.Bidding"/></returns>
+    //IQueryable < Domain.Biddings.Bidding > GetPageAsync(int pageSize, int pageIndex, CancellationToken cancellationToken);
 
     /// <summary>
     /// Создает Аукцион по модели.
@@ -47,15 +47,15 @@ public interface IPostRepository
     /// <param name="model">Модель Аукционы.</param>
     /// <param name="cancellationToken">Отмена операции.</param>
     /// <returns>Идентификатор созданной сущности</returns>
-    Task<Guid> CreateAsync(Domain.Posts.Post model, CancellationToken cancellationToken);
+    Task<Guid> CreateAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken);
 
     /// <summary>
     /// Обновляет(изменяет) Аукцион по модели.
     /// </summary>
     /// <param name="model">Модель Аукционы.</param>
     /// <param name="cancellationToken">Отмена операции.</param>
-    /// <returns>Модель Аукционы <see cref="Domain.Posts.Post"/></returns>
-    Task<Domain.Posts.Post> UpdateAsync(Domain.Posts.Post model, CancellationToken cancellationToken);
+    /// <returns>Модель Аукционы <see cref="Domain.Biddings.Bidding"/></returns>
+    Task<Domain.Biddings.Bidding> UpdateAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken);
 
     /// <summary>
     /// Удаляет Аукцион по модели.
@@ -64,7 +64,7 @@ public interface IPostRepository
     /// <param name="model">Модель Аукционы.</param>
     /// <param name="cancellationToken">Отмена операции.</param>
     /// <returns>Идентификатор удаленного Аукционы</returns>
-    Task<Guid> DeleteAsync(Domain.Posts.Post model, CancellationToken cancellationToken);
+    Task<Guid> DeleteAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken);
 }
 }
 

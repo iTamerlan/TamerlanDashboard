@@ -30,7 +30,7 @@ public class HistoryRepository : IHistoryRepository
     /// <inheritdoc />
     public async Task<Guid> CreateAsync(Domain.Historys.History model, CancellationToken cancellationToken)
     {
-        /*await*/ _repository.AddAsync(model);
+        await _repository.AddAsync(model);
         return model.Id;
     }
 
@@ -49,14 +49,14 @@ public class HistoryRepository : IHistoryRepository
     /// <inheritdoc />
     public async Task<Domain.Historys.History> UpdateAsync(Domain.Historys.History model, CancellationToken cancellationToken)
     {
-        /*await*/ _repository.UpdateAsync(model);
+        await _repository.UpdateAsync(model);
         return model;
     }
 
     /// <inheritdoc />
     public async Task<Guid> DeleteAsync(Domain.Historys.History model, CancellationToken cancellationToken)
     {
-        /*await*/ _repository.DeleteAsync(model);
+        await _repository.DeleteAsync(model);
         return model.Id;
     }
 }

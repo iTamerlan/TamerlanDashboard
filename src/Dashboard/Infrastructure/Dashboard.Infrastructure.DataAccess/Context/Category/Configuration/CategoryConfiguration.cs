@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Category.Configuration
     /// <summary>
     /// Конфигурация таблицы Categorys.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Categorys.Category>
+    internal class CategoryConfiguration : IEntityTypeConfiguration<Domain.Categorys.Category>
     {
         public void Configure(EntityTypeBuilder<Domain.Categorys.Category> builder)
         {

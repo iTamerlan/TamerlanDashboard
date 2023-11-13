@@ -35,7 +35,7 @@ public class CommentService : ICommentService
         return Task.Run(() => {
             return new CommentDto()
             {
-                Id = Guid.NewGuid(),
+                Id = _Comment.Id,
                 TextComment = _Comment.TextComment,
                 AuthorId = _Comment.AuthorId,
                 DateCreate = _Comment.DateCreate,

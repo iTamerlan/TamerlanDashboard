@@ -17,7 +17,7 @@ public class UserService : IUserService
     /// <summary>
     /// Инициализирует экзепляр <see cref="UserService"/>
     /// </summary>
-    /// <param name="UserRepository">Репозиторий для работы с объявлениями.</param>
+    /// <param name="UserRepository">Репозиторий для работы с пользователями.</param>
     public UserService(IUserRepository UserRepository)
     {
         _UserRepository = UserRepository;
@@ -35,7 +35,7 @@ public class UserService : IUserService
         return Task.Run(() => {
             return new UserDto()
             {
-                Id = Guid.NewGuid(),
+                Id = _User.Id,
                 Login = _User.Login,
                 Phone = _User.Phone,
             };

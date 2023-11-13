@@ -31,7 +31,7 @@ namespace Dashboard.Infrastructure.Repository
 
         public async Task<TEntity> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
-            return /*await*/ DbSet.FindAsync(id);
+            return await DbSet.FindAsync(id);
         }
 
         public async Task AddAsync(TEntity model)
@@ -41,8 +41,8 @@ namespace Dashboard.Infrastructure.Repository
                 throw new ArgumentNullException(nameof(model));
             }
 
-            /*await*/ DbSet.AddAsync(model);
-            /*await*/ SaveChangesAsync();
+            await DbSet.AddAsync(model);
+            await SaveChangesAsync();
         }
 
         public async Task UpdateAsync(TEntity model)
@@ -53,7 +53,7 @@ namespace Dashboard.Infrastructure.Repository
             }
 
             DbSet.Update(model);
-            /*await*/ SaveChangesAsync();
+            await SaveChangesAsync();
         }
 
         public async Task DeleteAsync(TEntity model)
@@ -64,12 +64,12 @@ namespace Dashboard.Infrastructure.Repository
             }
 
             DbSet.Remove(model);
-            /*await*/ SaveChangesAsync();
+            await SaveChangesAsync();
         }
 
         public async Task SaveChangesAsync()
         {
-            /*await*/ DbContext.SaveChangesAsync();
+            await DbContext.SaveChangesAsync();
         }
     }
 }

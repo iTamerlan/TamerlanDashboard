@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Voting.Configuration
     /// <summary>
     /// Конфигурация таблицы Votings.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Votings.Voting>
+    internal class VotingConfiguration : IEntityTypeConfiguration<Domain.Votings.Voting>
     {
         public void Configure(EntityTypeBuilder<Domain.Votings.Voting> builder)
         {

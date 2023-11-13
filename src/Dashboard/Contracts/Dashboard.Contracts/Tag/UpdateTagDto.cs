@@ -8,13 +8,17 @@
 
 using Engine.Contracts.Base;
 
-namespace Dashboard.Contracts.History
+namespace Dashboard.Contracts.Tag
 {
     /// <summary>
-    /// Сущность истории просмотра продукта.
+    /// Сущность тега.
     /// </summary>
-    public class UpdateHistoryDto : BaseDto
+    public class UpdateTagDto : BaseDto
     {
+        /// <summary>
+        /// Заголовок.
+        /// </summary>
+        public string Title { get; set; }
 
     }
 }

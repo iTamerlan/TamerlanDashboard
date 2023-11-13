@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Community.Configuration
     /// <summary>
     /// Конфигурация таблицы Communitys.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Communitys.Community>
+    internal class CommunityConfiguration : IEntityTypeConfiguration<Domain.Communitys.Community>
     {
         public void Configure(EntityTypeBuilder<Domain.Communitys.Community> builder)
         {

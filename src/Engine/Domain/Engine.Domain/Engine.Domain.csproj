@@ -20,6 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Bidding\GenBidding.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenBidding.tt</DependentUpon>
+    </Compile>
     <Compile Update="Post\GenPost.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -83,6 +88,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Bidding\GenBidding.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenBidding.cs</LastGenOutput>
+    </None>
     <None Update="Post\GenPost.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>GenPost.cs</LastGenOutput>

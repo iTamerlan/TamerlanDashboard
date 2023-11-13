@@ -7,7 +7,7 @@
 //     повторного создания кода.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Engine.Contracts.Post
+namespace Engine.Contracts.Bidding
 {
     using System.Linq;
     using System.Text;
@@ -18,9 +18,9 @@ namespace Engine.Contracts.Post
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+    #line 1 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class GenPostDto : GenPostDtoBase
+    public partial class GenBiddingDto : GenBiddingDtoBase
     {
 #line hidden
         /// <summary>
@@ -38,16 +38,16 @@ namespace Engine.Contracts.Post
 
 using Engine.Contracts.Base;
 
-namespace Dashboard.Contracts.Post
+namespace Dashboard.Contracts.Bidding
 {
     /// <summary>
     /// Сущность ПредложенияТоргов.
     /// </summary>
-    public class PostDto : BaseDto
+    public class BiddingDto : BaseDto
     {
         ");
             
-            #line 24 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 24 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PushIndent("        "); 
             
             #line default
@@ -56,14 +56,14 @@ namespace Dashboard.Contracts.Post
                     " set; }");
             this.Write("\r\n");
             
-            #line 26 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 26 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PopIndent(); 
             
             #line default
             #line hidden
             this.Write("\r\n        ");
             
-            #line 28 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 28 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PushIndent("        "); 
             
             #line default
@@ -72,14 +72,14 @@ namespace Dashboard.Contracts.Post
                     "; set; }");
             this.Write("\r\n");
             
-            #line 30 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 30 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PopIndent(); 
             
             #line default
             #line hidden
             this.Write("\r\n        ");
             
-            #line 32 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 32 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PushIndent("        "); 
             
             #line default
@@ -87,14 +87,14 @@ namespace Dashboard.Contracts.Post
             this.Write("/// <summary>\r\n/// Цена.\r\n/// </summary>\r\npublic decimal Price { get; set; }");
             this.Write("\r\n");
             
-            #line 34 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 34 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PopIndent(); 
             
             #line default
             #line hidden
             this.Write("\r\n        ");
             
-            #line 36 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 36 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PushIndent("        "); 
             
             #line default
@@ -103,14 +103,14 @@ namespace Dashboard.Contracts.Post
                     "get; set; }");
             this.Write("\r\n");
             
-            #line 38 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 38 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PopIndent(); 
             
             #line default
             #line hidden
             this.Write("\r\n        ");
             
-            #line 40 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 40 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PushIndent("        "); 
             
             #line default
@@ -119,7 +119,7 @@ namespace Dashboard.Contracts.Post
                     "{ get; set; }");
             this.Write("\r\n");
             
-            #line 42 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenPostDto.tt"
+            #line 42 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenBiddingDto.tt"
  PopIndent(); 
             
             #line default
@@ -136,7 +136,7 @@ namespace Dashboard.Contracts.Post
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class GenPostDtoBase
+    public class GenBiddingDtoBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

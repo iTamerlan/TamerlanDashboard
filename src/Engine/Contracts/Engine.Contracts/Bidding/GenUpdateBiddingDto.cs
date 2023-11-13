@@ -7,7 +7,7 @@
 //     повторного создания кода.
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Engine.Contracts.Post
+namespace Engine.Contracts.Bidding
 {
     using System.Linq;
     using System.Text;
@@ -18,9 +18,9 @@ namespace Engine.Contracts.Post
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenUpdatePostDto.tt"
+    #line 1 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenUpdateBiddingDto.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class GenUpdatePostDto : GenUpdatePostDtoBase
+    public partial class GenUpdateBiddingDto : GenUpdateBiddingDtoBase
     {
 #line hidden
         /// <summary>
@@ -38,16 +38,16 @@ namespace Engine.Contracts.Post
 
 using Engine.Contracts.Base;
 
-namespace Dashboard.Contracts.Post
+namespace Dashboard.Contracts.Bidding
 {
     /// <summary>
     /// Сущность ПредложенияТоргов.
     /// </summary>
-    public class UpdatePostDto : BaseDto
+    public class UpdateBiddingDto : BaseDto
     {
         ");
             
-            #line 24 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenUpdatePostDto.tt"
+            #line 24 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenUpdateBiddingDto.tt"
  PushIndent("        "); 
             
             #line default
@@ -56,7 +56,7 @@ namespace Dashboard.Contracts.Post
                     "{ get; set; }");
             this.Write("\r\n");
             
-            #line 26 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Post\GenUpdatePostDto.tt"
+            #line 26 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Bidding\GenUpdateBiddingDto.tt"
  PopIndent(); 
             
             #line default
@@ -73,7 +73,7 @@ namespace Dashboard.Contracts.Post
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class GenUpdatePostDtoBase
+    public class GenUpdateBiddingDtoBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

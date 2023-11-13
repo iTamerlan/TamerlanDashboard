@@ -34,7 +34,7 @@ namespace Dashboard.Contracts.Feedback
 <# PopIndent(); #>
 
         <# PushIndent("        "); #>
-<#@ include file="..\..\..\ModelProperties\Engine.ModelProperties\Post\Rating.ttinclude" #>
+<#@ include file="..\..\..\ModelProperties\Engine.ModelProperties\Post\Rating.ttinclude" #> 
 <# PopIndent(); #>
 
         <# PushIndent("        "); #>

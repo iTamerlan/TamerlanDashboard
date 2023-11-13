@@ -131,7 +131,8 @@ namespace Dashboard.Domain.Products
             
             #line default
             #line hidden
-            this.Write("/// <summary>\r\n/// Рейтинг.\r\n/// </summary>\r\npublic int Rating { get; set; }");
+            this.Write(" \r\n");
+            this.Write("/// <summary>\r\n/// Цена.\r\n/// </summary>\r\npublic decimal Price { get; set; }");
             this.Write("\r\n");
             
             #line 46 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Domain\Engine.Domain\Product\GenProduct.tt"

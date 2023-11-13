@@ -35,7 +35,7 @@ public class PostService : IPostService
         return Task.Run(() => {
             return new PostDto()
             {
-                Id = Guid.NewGuid(),
+                Id = _Post.Id,
                 Title = _Post.Title,
                 Description = _Post.Description,
                 //CategoryName = $"{_Post.CategoryId}",

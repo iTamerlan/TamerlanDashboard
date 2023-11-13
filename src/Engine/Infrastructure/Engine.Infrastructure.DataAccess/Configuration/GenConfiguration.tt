@@ -20,7 +20,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.<#= Name1 #>.Configuratio
     /// <summary>
     /// Конфигурация таблицы <#= Name1 #>s.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<<#= ModelDomain #>>
+    internal class <#= Name1 #>Configuration : IEntityTypeConfiguration<<#= ModelDomain #>>
     {
         public void Configure(EntityTypeBuilder<<#= ModelDomain #>> builder)
         {

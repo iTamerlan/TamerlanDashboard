@@ -14,12 +14,12 @@
 
 using Engine.Contracts.Base;
 
-namespace Dashboard.Contracts.Post
+namespace Dashboard.Contracts.Bidding
 {
     /// <summary>
     /// Сущность ПредложенияТоргов.
     /// </summary>
-    public class UpdatePostDto : BaseDto
+    public class UpdateBiddingDto : BaseDto
     {
         <# PushIndent("        "); #>
 <#@ include file="..\..\..\ModelProperties\Engine.ModelProperties\Comment\TextComment.ttinclude" #>

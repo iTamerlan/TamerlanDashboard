@@ -16,14 +16,16 @@ using Engine.Domain.Feedback;
 using Engine.Contracts.Feedback;
 using Engine.Domain.Voting;
 using Engine.Contracts.Voting;
-using Engine.Domain.Post;
-using Engine.Contracts.Post;
+using Engine.Domain.Bidding;
+using Engine.Contracts.Bidding;
 using Engine.Domain.Bookmarks;
 using Engine.Contracts.Bookmark;
 using Engine.Domain.History;
 using Engine.Contracts.History;
 using Engine.Domain.Category;
 using Engine.Contracts.Category;
+using Engine.Domain.Tag;
+using Engine.Contracts.Tag;
 
 namespace Engine.EngineApp.GenCodeApp
 {
@@ -86,11 +88,11 @@ namespace Engine.EngineApp.GenCodeApp
             /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Create" + tdir + "Dto.cs", new GenCreateVotingDto().TransformText());
             /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Update" + tdir + "Dto.cs", new GenUpdateVotingDto().TransformText());
             // Post
-            tdir = "Post";
-            /*await*/ GenSave.Save(DomainDir + "/" + tdir + "s/" + tdir + ".cs", new GenPost().TransformText());
-            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/" + tdir + "Dto.cs", new GenPostDto().TransformText());
-            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Create" + tdir + "Dto.cs", new GenCreatePostDto().TransformText());
-            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Update" + tdir + "Dto.cs", new GenUpdatePostDto().TransformText());
+            tdir = "Bidding";
+            /*await*/ GenSave.Save(DomainDir + "/" + tdir + "s/" + tdir + ".cs", new GenBidding().TransformText());
+            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/" + tdir + "Dto.cs", new GenBiddingDto().TransformText());
+            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Create" + tdir + "Dto.cs", new GenCreateBiddingDto().TransformText());
+            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Update" + tdir + "Dto.cs", new GenUpdateBiddingDto().TransformText());
             // Bookmark
             tdir = "Bookmark";
             /*await*/ GenSave.Save(DomainDir + "/" + tdir + "s/" + tdir + ".cs", new GenBookmark().TransformText());
@@ -105,10 +107,10 @@ namespace Engine.EngineApp.GenCodeApp
             /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Update" + tdir + "Dto.cs", new GenUpdateHistoryDto().TransformText());
             // Tag
             tdir = "Tag";
-            /*await*/ GenSave.Save(DomainDir + "/" + tdir + "s/" + tdir + ".cs", new GenHistory().TransformText());
-            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/" + tdir + "Dto.cs", new GenHistoryDto().TransformText());
-            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Create" + tdir + "Dto.cs", new GenCreateHistoryDto().TransformText());
-            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Update" + tdir + "Dto.cs", new GenUpdateHistoryDto().TransformText());
+            /*await*/ GenSave.Save(DomainDir + "/" + tdir + "s/" + tdir + ".cs", new GenTag().TransformText());
+            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/" + tdir + "Dto.cs", new GenTagDto().TransformText());
+            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Create" + tdir + "Dto.cs", new GenCreateTagDto().TransformText());
+            /*await*/ GenSave.Save(ContractDir + "/" + tdir + "/Update" + tdir + "Dto.cs", new GenUpdateTagDto().TransformText());
             // Category
             tdir = "Category";
             /*await*/ GenSave.Save(DomainDir + "/" + tdir + "s/" + tdir + ".cs", new GenCategory().TransformText());
@@ -340,9 +342,9 @@ namespace Engine.EngineApp.GenCodeApp
             g.ToComment = "";
             /*await*/ GenSave.Save(AppStructure + "/" + g.Name1 + "/" + g.TypeGenMulti + "/I" + g.Name1 + g.TypeGen + ".cs", g.TransformText());
 
-            // Post
+            // Bidding
             g.GenerationEnvironment.Clear();
-            g.Name1 = "Post";
+            g.Name1 = "Bidding";
             g.ModelUsing = "Domain";
             g.ModelUsingS = "s";
             g.ModelDomain = "Domain." + g.Name1 + "s." + g.Name1;
@@ -541,7 +543,7 @@ namespace Engine.EngineApp.GenCodeApp
             /*await*/ GenSave.Save(InfrastructureDir + "/" + c.Name1 + "/Configuration/" + c.Name1 + "Configuration.cs", c.TransformText());
 
             c.GenerationEnvironment.Clear();
-            c.Name1 = "Post";
+            c.Name1 = "Bidding";
             c.ModelDomain = "Domain." + c.Name1 + "s." + c.Name1;
             /*await*/ GenSave.Save(InfrastructureDir + "/" + c.Name1 + "/Configuration/" + c.Name1 + "Configuration.cs", c.TransformText());
 
@@ -603,7 +605,7 @@ namespace Engine.EngineApp.GenCodeApp
             /*await*/ GenSave.Save(InfrastructureDir + "/" + r.Name1 + "/Repository/" + r.Name1 + "Repository.cs", r.TransformText());
 
             r.GenerationEnvironment.Clear();
-            r.Name1 = "Post";
+            r.Name1 = "Bidding";
             r.ModelDomain = "Domain." + r.Name1 + "s." + r.Name1;
             /*await*/ GenSave.Save(InfrastructureDir + "/" + r.Name1 + "/Repository/" + r.Name1 + "Repository.cs", r.TransformText());
 

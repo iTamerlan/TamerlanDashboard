@@ -8,12 +8,12 @@
 
 using Engine.Domain.Base;
 
-namespace Dashboard.Domain.Posts
+namespace Dashboard.Domain.Biddings
 {
     /// <summary>
     /// Сущность ПредложенияТоргов.
     /// </summary>
-    public class Post : BaseEntity
+    public class Bidding : BaseEntity
     {
         /// <summary>
         /// Автор объявления.

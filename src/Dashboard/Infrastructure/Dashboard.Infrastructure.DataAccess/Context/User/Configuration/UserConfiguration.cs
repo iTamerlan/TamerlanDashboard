@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.User.Configuration
     /// <summary>
     /// Конфигурация таблицы Users.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Users.User>
+    internal class UserConfiguration : IEntityTypeConfiguration<Domain.Users.User>
     {
         public void Configure(EntityTypeBuilder<Domain.Users.User> builder)
         {

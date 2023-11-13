@@ -22,7 +22,7 @@ namespace Engine.EngineApp.GenCodeApp
                 // преобразуем строку в байты
                 byte[] buffer = Encoding.Default.GetBytes(code);
                 // запись массива байтов в файл
-                /*await*/ fstream.WriteAsync(buffer, 0, buffer.Length);
+                await fstream.WriteAsync(buffer, 0, buffer.Length);
                 //Console.WriteLine("Текст записан в файл");
             }
         }

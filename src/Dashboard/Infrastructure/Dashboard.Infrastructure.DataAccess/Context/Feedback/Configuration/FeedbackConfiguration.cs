@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Feedback.Configuration
     /// <summary>
     /// Конфигурация таблицы Feedbacks.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Feedbacks.Feedback>
+    internal class FeedbackConfiguration : IEntityTypeConfiguration<Domain.Feedbacks.Feedback>
     {
         public void Configure(EntityTypeBuilder<Domain.Feedbacks.Feedback> builder)
         {

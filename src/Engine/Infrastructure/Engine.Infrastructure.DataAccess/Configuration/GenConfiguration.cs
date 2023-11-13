@@ -18,7 +18,7 @@ namespace Engine.Infrastructure.DataAccess.Configuration
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+    #line 1 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class GenConfiguration : GenConfigurationBase
     {
@@ -41,36 +41,42 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Dashboard.Infrastructure.DataAccess.Contexts.");
             
-            #line 18 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+            #line 18 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Name1));
             
             #line default
             #line hidden
             this.Write(".Configuration\r\n{\r\n    /// <summary>\r\n    /// Конфигурация таблицы ");
             
-            #line 21 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+            #line 21 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Name1));
             
             #line default
             #line hidden
-            this.Write("s.\r\n    /// </summary>\r\n    internal class PostConfiguration : IEntityTypeConfigu" +
-                    "ration<");
+            this.Write("s.\r\n    /// </summary>\r\n    internal class ");
             
-            #line 23 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+            #line 23 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Name1));
+            
+            #line default
+            #line hidden
+            this.Write("Configuration : IEntityTypeConfiguration<");
+            
+            #line 23 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ModelDomain));
             
             #line default
             #line hidden
             this.Write(">\r\n    {\r\n        public void Configure(EntityTypeBuilder<");
             
-            #line 25 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+            #line 25 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ModelDomain));
             
             #line default
             #line hidden
             this.Write("> builder)\r\n        {\r\n            builder.ToTable(nameof(");
             
-            #line 27 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+            #line 27 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ModelDomain));
             
             #line default
@@ -80,7 +86,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.");
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 36 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Dashboard.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
+        #line 36 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Infrastructure\Engine.Infrastructure.DataAccess\Configuration\GenConfiguration.tt"
  
     public string Name1 { get; set; } // Post
     public string ModelDomain { get; set; } // Domain.Posts.Post

@@ -101,7 +101,7 @@ namespace Dashboard.Contracts.Feedback
             #line default
             #line hidden
             this.Write("/// <summary>\r\n/// Рейтинг.\r\n/// </summary>\r\npublic int Rating { get; set; }");
-            this.Write("\r\n");
+            this.Write(" \r\n");
             
             #line 38 "E:\my_project\repos_net\Dashboard_my\TamerlanDashboard\src\Engine\Contracts\Engine.Contracts\Feedback\GenFeedbackDto.tt"
  PopIndent(); 

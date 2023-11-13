@@ -41,7 +41,7 @@ namespace Dashboard.Domain.Products
 <#@ include file="..\..\..\ModelProperties\Engine.ModelProperties\Post\CategoryName.ttinclude" #>
 <# PopIndent(); #>
 
-        <# PushIndent("        "); #>
+        <# PushIndent("        "); #> 
 <#@ include file="..\..\..\ModelProperties\Engine.ModelProperties\Post\Price.ttinclude" #>
 <# PopIndent(); #>
 
