@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.History.Configuration
     /// <summary>
     /// Конфигурация таблицы Historys.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Historys.History>
+    internal class HistoryConfiguration : IEntityTypeConfiguration<Domain.Historys.History>
     {
         public void Configure(EntityTypeBuilder<Domain.Historys.History> builder)
         {

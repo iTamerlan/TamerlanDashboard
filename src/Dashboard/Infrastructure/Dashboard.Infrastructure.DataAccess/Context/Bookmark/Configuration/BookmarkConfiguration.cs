@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Bookmark.Configuration
     /// <summary>
     /// Конфигурация таблицы Bookmarks.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Bookmarks.Bookmark>
+    internal class BookmarkConfiguration : IEntityTypeConfiguration<Domain.Bookmarks.Bookmark>
     {
         public void Configure(EntityTypeBuilder<Domain.Bookmarks.Bookmark> builder)
         {

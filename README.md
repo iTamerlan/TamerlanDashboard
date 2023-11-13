@@ -49,10 +49,10 @@ docker-compose up -d
 
 Эта команда запустит контейнер с postgres.
 
-В Visual Studio в консоли диспетчера пакетов выполните команду миграции:
+В Visual Studio в консоли диспетчера пакетов при выбранном DbMigrator выполните команду миграции:
 
 ```bash
-EntityFramework6\Update-Database
+EntityFrameworkCore\Update-Database
 ```
 
 Dashboard.Hosts.Api готов к запуску!

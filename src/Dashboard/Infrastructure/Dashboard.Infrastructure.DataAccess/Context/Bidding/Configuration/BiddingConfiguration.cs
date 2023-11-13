@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Bidding.Configuration
     /// <summary>
     /// Конфигурация таблицы Biddings.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Biddings.Bidding>
+    internal class BiddingConfiguration : IEntityTypeConfiguration<Domain.Biddings.Bidding>
     {
         public void Configure(EntityTypeBuilder<Domain.Biddings.Bidding> builder)
         {

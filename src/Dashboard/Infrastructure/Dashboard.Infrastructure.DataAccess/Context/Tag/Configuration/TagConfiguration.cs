@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Tag.Configuration
     /// <summary>
     /// Конфигурация таблицы Tags.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Tags.Tag>
+    internal class TagConfiguration : IEntityTypeConfiguration<Domain.Tags.Tag>
     {
         public void Configure(EntityTypeBuilder<Domain.Tags.Tag> builder)
         {

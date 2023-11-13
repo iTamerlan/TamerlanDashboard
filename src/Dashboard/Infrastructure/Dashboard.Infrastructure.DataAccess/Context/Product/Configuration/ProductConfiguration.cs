@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Product.Configuration
     /// <summary>
     /// Конфигурация таблицы Products.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Products.Product>
+    internal class ProductConfiguration : IEntityTypeConfiguration<Domain.Products.Product>
     {
         public void Configure(EntityTypeBuilder<Domain.Products.Product> builder)
         {

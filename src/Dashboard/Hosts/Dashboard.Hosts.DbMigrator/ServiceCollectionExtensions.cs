@@ -25,7 +25,7 @@ namespace Dashboards.Hosts.DbMigrator
         /// </summary>
         private static IServiceCollection ConfigureDbConnections(this IServiceCollection services, IConfiguration configuration)
         {
-            //var connectionString = configuration.GetConnectionString("postgresBoardDb");
+            //var connectionString = configuration.GetConnectionString("PostgresBoardDb");
 
             //TODO
             var connectionString = "Host=localhost;Database=board;Username=postgres;Password=postgres";

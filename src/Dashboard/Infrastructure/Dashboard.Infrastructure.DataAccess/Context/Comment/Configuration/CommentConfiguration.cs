@@ -14,7 +14,7 @@ namespace Dashboard.Infrastructure.DataAccess.Contexts.Comment.Configuration
     /// <summary>
     /// Конфигурация таблицы Comments.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Comments.Comment>
+    internal class CommentConfiguration : IEntityTypeConfiguration<Domain.Comments.Comment>
     {
         public void Configure(EntityTypeBuilder<Domain.Comments.Comment> builder)
         {
