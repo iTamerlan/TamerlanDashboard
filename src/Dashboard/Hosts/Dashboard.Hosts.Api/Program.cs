@@ -15,6 +15,33 @@ using Dashboard.Infrastructure.DataAccess.Contexts.Comment.Repositories;
 using Dashboard.Application.AppServices.Contexts.User.Services;
 using Dashboard.Application.AppServices.Contexts.User.Repositories;
 using Dashboard.Infrastructure.DataAccess.Contexts.User.Repositories;
+using Dashboard.Application.AppServices.Contexts.Community.Services;
+using Dashboard.Application.AppServices.Contexts.Community.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Community.Repositories;
+using Dashboard.Application.AppServices.Contexts.Product.Services;
+using Dashboard.Application.AppServices.Contexts.Product.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Product.Repositories;
+using Dashboard.Application.AppServices.Contexts.Feedback.Services;
+using Dashboard.Infrastructure.DataAccess.Contexts.Feedback.Repositories;
+using Dashboard.Application.AppServices.Contexts.Feedback.Repositories;
+using Dashboard.Application.AppServices.Contexts.Voting.Services;
+using Dashboard.Application.AppServices.Contexts.Voting.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Voting.Repositories;
+using Dashboard.Application.AppServices.Contexts.Bidding.Services;
+using Dashboard.Application.AppServices.Contexts.Bidding.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Bidding.Repositories;
+using Dashboard.Application.AppServices.Contexts.Bookmark.Services;
+using Dashboard.Application.AppServices.Contexts.Bookmark.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Bookmark.Repositories;
+using Dashboard.Application.AppServices.Contexts.History.Services;
+using Dashboard.Application.AppServices.Contexts.History.Repositories;
+using Dashboard.Application.AppServices.Contexts.Tag.Services;
+using Dashboard.Application.AppServices.Contexts.Tag.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Tag.Repositories;
+using Dashboard.Application.AppServices.Contexts.Category.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Category.Repositories;
+using Dashboard.Application.AppServices.Contexts.Category.Services;
+using Dashboard.Infrastructure.DataAccess.Contexts.History.Repositories;
 
 internal class Program
 {
@@ -67,6 +94,33 @@ internal class Program
         builder.Services.AddScoped<IUserService, UserService>();
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         // builder.Services.AddScoped<IPostRepository, PostTestRepository>(); // Выставлен тестовый репозиторий!
+
+        builder.Services.AddScoped<ICommunityService, CommunityService>();
+        builder.Services.AddScoped<ICommunityRepository, CommunityRepository>();
+
+        builder.Services.AddScoped<IProductService, ProductService>();
+        builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+        builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+        builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
+
+        builder.Services.AddScoped<IVotingService, VotingService>();
+        builder.Services.AddScoped<IVotingRepository, VotingRepository>();
+
+        builder.Services.AddScoped<IBiddingService, BiddingService>();
+        builder.Services.AddScoped<IBiddingRepository, BiddingRepository>();
+
+        builder.Services.AddScoped<IBookmarkService, BookmarkService>();
+        builder.Services.AddScoped<IBookmarkRepository, BookmarkRepository>();
+
+        builder.Services.AddScoped<IHistoryService, HistoryService>();
+        builder.Services.AddScoped<IHistoryRepository, HistoryRepository>();
+
+        builder.Services.AddScoped<ITagService, TagService>();
+        builder.Services.AddScoped<ITagRepository, TagRepository>();
+
+        builder.Services.AddScoped<ICategoryService, CategoryService>();
+        builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 
         var app = builder.Build();
