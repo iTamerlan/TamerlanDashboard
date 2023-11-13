@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Текст комментария.
+/// </summary>
+public string TextComment { get; set; }

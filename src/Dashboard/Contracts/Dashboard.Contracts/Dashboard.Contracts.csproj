@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Engine\Contracts\Engine.Contracts\Engine.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\Engine\ModelProperties\Engine.ModelProperties\Engine.ModelProperties.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Comment\" />
+    <Folder Include="User\" />
+    <Folder Include="Community\" />
+    <Folder Include="Product\" />
+    <Folder Include="Feedback\" />
+    <Folder Include="Voting\" />
+    <Folder Include="Post\" />
+    <Folder Include="Bookmark\" />
+    <Folder Include="History\" />
+    <Folder Include="Tag\" />
+    <Folder Include="Category\" />
+  </ItemGroup>
+
+</Project>

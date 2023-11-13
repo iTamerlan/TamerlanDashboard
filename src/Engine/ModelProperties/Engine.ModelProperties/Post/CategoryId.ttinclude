@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Наименование категории.
+/// </summary>
+public Guid CategoryId { get; set; }

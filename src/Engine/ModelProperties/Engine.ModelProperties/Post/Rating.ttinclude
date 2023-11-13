@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Рейтинг.
+/// </summary>
+public int Rating { get; set; }

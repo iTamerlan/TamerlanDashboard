@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Логин.
+/// </summary>
+public string Login { get; set; }

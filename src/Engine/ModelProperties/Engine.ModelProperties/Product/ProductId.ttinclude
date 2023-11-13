@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Идентификатор поста.
+/// </summary>
+public Guid PostId { get; set; }

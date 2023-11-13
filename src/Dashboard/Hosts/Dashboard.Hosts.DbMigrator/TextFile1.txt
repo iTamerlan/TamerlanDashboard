@@ -1,0 +1,4 @@
+﻿Консоль диспетчера пакетов
+EntityFramework6\Enable-Migrations
+EntityFramework6\Update-Database
+EntityFramework6\Add-Migration InitialCreate

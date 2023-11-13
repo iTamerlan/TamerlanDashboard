@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Регистрационный Email.
+/// </summary>
+public string EmailReg { get; set; }

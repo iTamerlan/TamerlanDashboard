@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Dashboards.Hosts.Migrations": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

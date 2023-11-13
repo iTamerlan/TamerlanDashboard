@@ -1,0 +1,342 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\ModelProperties\Engine.ModelProperties\Engine.ModelProperties.csproj" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CodeDom" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Bidding\GenBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenBiddingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bidding\GenCreateBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateBiddingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bidding\GenUpdateBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateBiddingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bookmark\GenBookmarkDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenBookmarkDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bookmark\GenCreateBookmarkDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateBookmarkDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bookmark\GenUpdateBookmarkDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateBookmarkDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Category\GenCategoryDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCategoryDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Category\GenCreateCategoryDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateCategoryDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Category\GenUpdateCategoryDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateCategoryDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Comment\GenCommentDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCommentDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Comment\GenCreateCommentDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateCommentDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Comment\GenUpdateCommentDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateCommentDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Community\GenCommunityDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCommunityDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Community\GenCreateCommunityDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateCommunityDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Community\GenUpdateCommunityDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateCommunityDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Feedback\GenCreateFeedbackDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateFeedbackDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Feedback\GenFeedbackDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenFeedbackDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Feedback\GenUpdateFeedbackDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateFeedbackDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="History\GenCreateHistoryDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateHistoryDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="History\GenHistoryDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenHistoryDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="History\GenUpdateHistoryDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateHistoryDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bidding\GenUpdateBiddingDto.cs">
+      <DependentUpon>GenUpdateBiddingDto.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Bidding\GenBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenBiddingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Product\GenCreateProductDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateProductDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Product\GenProductDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenProductDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Product\GenUpdateProductDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateProductDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Tag\GenCreateTagDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateTagDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Tag\GenTagDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenTagDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Tag\GenUpdateTagDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateTagDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="User\GenCreateUserDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateUserDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="User\GenUserDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUserDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="User\GenUpdateUserDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateUserDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Voting\GenCreateVotingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateVotingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Voting\GenUpdateVotingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateVotingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Voting\GenVotingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenVotingDto.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Bidding\GenCreateBiddingDto.tt">
+      <LastGenOutput>GenCreateBiddingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bidding\GenUpdateBiddingDto.tt">
+      <LastGenOutput>GenUpdateBiddingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bidding\GenBiddingDto.tt">
+      <LastGenOutput>GenBiddingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bookmark\GenCreateBookmarkDto.tt">
+      <LastGenOutput>GenCreateBookmarkDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bookmark\GenUpdateBookmarkDto.tt">
+      <LastGenOutput>GenUpdateBookmarkDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bookmark\GenBookmarkDto.tt">
+      <LastGenOutput>GenBookmarkDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Category\GenCreateCategoryDto.tt">
+      <LastGenOutput>GenCreateCategoryDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Category\GenUpdateCategoryDto.tt">
+      <LastGenOutput>GenUpdateCategoryDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Category\GenCategoryDto.tt">
+      <LastGenOutput>GenCategoryDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Comment\GenCommentDto.tt">
+      <LastGenOutput>GenCommentDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Comment\GenCreateCommentDto.tt">
+      <LastGenOutput>GenCreateCommentDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Comment\GenUpdateCommentDto.tt">
+      <LastGenOutput>GenUpdateCommentDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Community\GenCreateCommunityDto.tt">
+      <LastGenOutput>GenCreateCommunityDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Community\GenUpdateCommunityDto.tt">
+      <LastGenOutput>GenUpdateCommunityDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Community\GenCommunityDto.tt">
+      <LastGenOutput>GenCommunityDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Feedback\GenCreateFeedbackDto.tt">
+      <LastGenOutput>GenCreateFeedbackDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Feedback\GenUpdateFeedbackDto.tt">
+      <LastGenOutput>GenUpdateFeedbackDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Feedback\GenFeedbackDto.tt">
+      <LastGenOutput>GenFeedbackDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="History\GenCreateHistoryDto.tt">
+      <LastGenOutput>GenCreateHistoryDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="History\GenUpdateHistoryDto.tt">
+      <LastGenOutput>GenUpdateHistoryDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="History\GenHistoryDto.tt">
+      <LastGenOutput>GenHistoryDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bidding\GenUpdateBiddingDto.tt">
+      <LastGenOutput>GenUpdateBiddingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bidding\GenBiddingDto.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenBiddingDto.cs</LastGenOutput>
+    </None>
+    <None Update="Product\GenCreateProductDto.tt">
+      <LastGenOutput>GenCreateProductDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Product\GenUpdateProductDto.tt">
+      <LastGenOutput>GenUpdateProductDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Product\GenProductDto.tt">
+      <LastGenOutput>GenProductDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Tag\GenCreateTagDto.tt">
+      <LastGenOutput>GenCreateTagDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Tag\GenUpdateTagDto.tt">
+      <LastGenOutput>GenUpdateTagDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Tag\GenTagDto.tt">
+      <LastGenOutput>GenTagDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="User\GenCreateUserDto.tt">
+      <LastGenOutput>GenCreateUserDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="User\GenUserDto.tt">
+      <LastGenOutput>GenUserDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="User\GenUpdateUserDto.tt">
+      <LastGenOutput>GenUpdateUserDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Voting\GenCreateVotingDto.tt">
+      <LastGenOutput>GenCreateVotingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Voting\GenUpdateVotingDto.tt">
+      <LastGenOutput>GenUpdateVotingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Voting\GenVotingDto.tt">
+      <LastGenOutput>GenVotingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

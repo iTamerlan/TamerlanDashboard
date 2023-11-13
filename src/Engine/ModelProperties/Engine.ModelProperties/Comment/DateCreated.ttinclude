@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Дата создания комментария.
+/// </summary>
+public DateTime DateCreate { get; set; }

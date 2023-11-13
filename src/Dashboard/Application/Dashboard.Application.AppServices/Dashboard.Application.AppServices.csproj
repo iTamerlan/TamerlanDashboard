@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Engine\Contracts\Engine.Contracts\Engine.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\Engine\Domain\Engine.Domain\Engine.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Engine\ModelProperties\Engine.ModelProperties\Engine.ModelProperties.csproj" />
+    <ProjectReference Include="..\..\Contracts\Dashboard.Contracts\Dashboard.Contracts.csproj" />
+    <ProjectReference Include="..\..\Domain\Dashboard.Domain\Dashboard.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Comment\Repositories\" />
+    <Folder Include="Product\Repositories\" />
+    <Folder Include="Feedback\Repositories\" />
+    <Folder Include="Voting\Repositories\" />
+    <Folder Include="Post\Repositories\" />
+    <Folder Include="Bookmark\Repositories\" />
+    <Folder Include="History\Repositories\" />
+    <Folder Include="Tag\Repositories\" />
+    <Folder Include="Category\Repositories\" />
+    <Folder Include="Community\Repositories\" />
+    <Folder Include="empty\Repositories\" />
+    <Folder Include="empty\Services\" />
+    <Folder Include="User\Repositories\" />
+  </ItemGroup>
+
+</Project>

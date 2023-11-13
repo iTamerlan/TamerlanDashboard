@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Родительский объект.
+/// </summary>
+public Guid ParrentId { get; set; }

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Dashboard.Application.AppServices\Dashboard.Application.AppServices.csproj" />
+    <ProjectReference Include="..\Dashboard.Infrastructure\Dashboard.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Context\Product\Configuration\" />
+    <Folder Include="Context\Product\Repository\" />
+    <Folder Include="Context\Feedback\Configuration\" />
+    <Folder Include="Context\Feedback\Repository\" />
+    <Folder Include="Context\Voting\Configuration\" />
+    <Folder Include="Context\Voting\Repository\" />
+    <Folder Include="Context\Post\Configuration\" />
+    <Folder Include="Context\Post\Repository\" />
+    <Folder Include="Context\Bookmark\Configuration\" />
+    <Folder Include="Context\Bookmark\Repository\" />
+    <Folder Include="Context\History\Configuration\" />
+    <Folder Include="Context\History\Repository\" />
+    <Folder Include="Context\Tag\Configuration\" />
+    <Folder Include="Context\Tag\Repository\" />
+    <Folder Include="Context\Category\Configuration\" />
+    <Folder Include="Context\Category\Repository\" />
+    <Folder Include="Context\Community\Configuration\" />
+    <Folder Include="Context\Community\Repository\" />
+    <Folder Include="Context\empty\Repository\" />
+    <Folder Include="Context\empty\Configuration\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Цена.
+/// </summary>
+public decimal Price { get; set; }

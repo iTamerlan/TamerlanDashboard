@@ -1,0 +1,136 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CodeDom" Version="7.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ModelProperties\Engine.ModelProperties\Engine.ModelProperties.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Post\GenPost.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenPost.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bookmarks\GenBookmark.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenBookmark.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Category\GenCategory.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCategory.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Comment\GenComment.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenComment.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Community\GenCommunity.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCommunity.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Feedback\GenFeedback.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenFeedback.tt</DependentUpon>
+    </Compile>
+    <Compile Update="History\GenHistory.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenHistory.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Post\GenPost.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenPost.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Product\GenProduct.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenProduct.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Tag\GenTag.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenTag.tt</DependentUpon>
+    </Compile>
+    <Compile Update="User\GenUser.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUser.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Voting\GenVoting.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenVoting.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Post\GenPost.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenPost.cs</LastGenOutput>
+    </None>
+    <None Update="Bookmarks\GenBookmark.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenBookmark.cs</LastGenOutput>
+    </None>
+    <None Update="Category\GenCategory.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenCategory.cs</LastGenOutput>
+    </None>
+    <None Update="Comment\GenComment.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenComment.cs</LastGenOutput>
+    </None>
+    <None Update="Community\GenCommunity.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenCommunity.cs</LastGenOutput>
+    </None>
+    <None Update="Feedback\GenFeedback.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenFeedback.cs</LastGenOutput>
+    </None>
+    <None Update="History\GenHistory.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenHistory.cs</LastGenOutput>
+    </None>
+    <None Update="Post\GenPost.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenPost.cs</LastGenOutput>
+    </None>
+    <None Update="Product\GenProduct.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenProduct.cs</LastGenOutput>
+    </None>
+    <None Update="Tag\GenTag.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenTag.cs</LastGenOutput>
+    </None>
+    <None Update="User\GenUser.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenUser.cs</LastGenOutput>
+    </None>
+    <None Update="Voting\GenVoting.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenVoting.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

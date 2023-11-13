@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Статус.
+/// </summary>
+public StatusPublication StatusPost { get; set; }

@@ -1,0 +1,4 @@
+﻿/// <summary>
+/// Заголовок.
+/// </summary>
+public string Title { get; set; }
