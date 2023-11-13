@@ -31,9 +31,9 @@ namespace Dashboard.Domain.Feedbacks
         public string Description { get; set; }
 
         /// <summary>
-        /// Цена.
+        /// Рейтинг.
         /// </summary>
-        public decimal Price { get; set; }
+        public int Rating { get; set; }
 
         /// <summary>
         /// Дата создания.

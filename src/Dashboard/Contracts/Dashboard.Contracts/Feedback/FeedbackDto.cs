@@ -33,7 +33,7 @@ namespace Dashboard.Contracts.Feedback
         /// <summary>
         /// Рейтинг.
         /// </summary>
-        public int Rating { get; set; }
+        public int Rating { get; set; } 
 
         /// <summary>
         /// Дата создания.

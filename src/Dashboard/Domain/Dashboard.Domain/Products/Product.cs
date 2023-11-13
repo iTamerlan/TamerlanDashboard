@@ -40,10 +40,11 @@ namespace Dashboard.Domain.Products
         /// </summary>
         public string CategoryName { get; set; }
 
+         
         /// <summary>
-        /// Рейтинг.
+        /// Цена.
         /// </summary>
-        public int Rating { get; set; }
+        public decimal Price { get; set; }
 
         /// <summary>
         /// Дата создания.
