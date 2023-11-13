@@ -25,10 +25,10 @@ namespace Dashboards.Hosts.DbMigrator
         /// </summary>
         private static IServiceCollection ConfigureDbConnections(this IServiceCollection services, IConfiguration configuration)
         {
-            //var connectionString = configuration.GetConnectionString("PostgresBoardDb");
+            //var connectionString = configuration.GetConnectionString("postgresBoardDb");
 
             //TODO
-            var connectionString = "Host=localhost;Database=board;Username=Postgres;Password=Postgres";
+            var connectionString = "Host=localhost;Database=board;Username=postgres;Password=postgres";
 
             services.AddDbContext<MigrationDbContext>(options => options.UseNpgsql(connectionString));
             return services;

@@ -2,3 +2,5 @@
 EntityFramework6\Enable-Migrations
 EntityFramework6\Update-Database
 EntityFramework6\Add-Migration InitialCreate
+
+Npgsql.EntityFrameworkCore.PostgreSQL
