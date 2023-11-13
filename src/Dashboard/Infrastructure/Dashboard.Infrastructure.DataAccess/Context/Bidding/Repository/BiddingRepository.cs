@@ -30,7 +30,7 @@ public class BiddingRepository : IBiddingRepository
     /// <inheritdoc />
     public async Task<Guid> CreateAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken)
     {
-        /*await*/ _repository.AddAsync(model);
+        await _repository.AddAsync(model);
         return model.Id;
     }
 
@@ -49,14 +49,14 @@ public class BiddingRepository : IBiddingRepository
     /// <inheritdoc />
     public async Task<Domain.Biddings.Bidding> UpdateAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken)
     {
-        /*await*/ _repository.UpdateAsync(model);
+        await _repository.UpdateAsync(model);
         return model;
     }
 
     /// <inheritdoc />
     public async Task<Guid> DeleteAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken)
     {
-        /*await*/ _repository.DeleteAsync(model);
+        await _repository.DeleteAsync(model);
         return model.Id;
     }
 }

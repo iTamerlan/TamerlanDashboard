@@ -109,7 +109,7 @@ using Dashboard.Application.AppServices.Contexts.");
             
             #line default
             #line hidden
-            this.Write(" model, CancellationToken cancellationToken)\r\n    {\r\n        /*await*/ _repository.Ad" +
+            this.Write(" model, CancellationToken cancellationToken)\r\n    {\r\n        await _repository.Ad" +
                     "dAsync(model);\r\n        return model.Id;\r\n    }\r\n\r\n    /// <inheritdoc />\r\n    p" +
                     "ublic Task<");
             
@@ -142,7 +142,7 @@ using Dashboard.Application.AppServices.Contexts.");
             
             #line default
             #line hidden
-            this.Write(" model, CancellationToken cancellationToken)\r\n    {\r\n        /*await*/ _repository.Up" +
+            this.Write(" model, CancellationToken cancellationToken)\r\n    {\r\n        await _repository.Up" +
                     "dateAsync(model);\r\n        return model;\r\n    }\r\n\r\n    /// <inheritdoc />\r\n    p" +
                     "ublic async Task<Guid> DeleteAsync(");
             
@@ -151,7 +151,7 @@ using Dashboard.Application.AppServices.Contexts.");
             
             #line default
             #line hidden
-            this.Write(" model, CancellationToken cancellationToken)\r\n    {\r\n        /*await*/ _repository.De" +
+            this.Write(" model, CancellationToken cancellationToken)\r\n    {\r\n        await _repository.De" +
                     "leteAsync(model);\r\n        return model.Id;\r\n    }\r\n}\r\n\r\n\r\n");
             return this.GenerationEnvironment.ToString();
         }

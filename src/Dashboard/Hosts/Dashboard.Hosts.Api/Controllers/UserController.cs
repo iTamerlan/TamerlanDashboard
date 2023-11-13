@@ -45,7 +45,7 @@ namespace Dashboard.Hosts.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
-            var result = /*await*/ _userService.GetByIdAsync(id, cancellationToken);
+            var result = await _userService.GetByIdAsync(id, cancellationToken);
             return Ok(result);
             //return Ok();
         }
@@ -58,7 +58,7 @@ namespace Dashboard.Hosts.Api.Controllers
         [HttpGet("get-all")]
         public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken)
         {
-            var result = /*await*/ _userService.GetAllAsync(cancellationToken);
+            var result = await _userService.GetAllAsync(cancellationToken);
             return Ok(result);
             //return Ok();
         }
@@ -73,7 +73,7 @@ namespace Dashboard.Hosts.Api.Controllers
         [HttpGet("get-all-paged")]
         public async Task<IActionResult> GetPageAsync(CancellationToken cancellationToken, int pageSize = 10, int pageIndex = 0)
         {
-            var result = /*await*/ _userService.GetPageAsync(pageSize, pageIndex, cancellationToken);
+            var result = await _userService.GetPageAsync(pageSize, pageIndex, cancellationToken);
             return Ok(result);
             //return Ok();
         }
@@ -87,7 +87,7 @@ namespace Dashboard.Hosts.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync(CreateUserDto dto, CancellationToken cancellationToken)
         {
-            var modelId = /*await*/ _userService.CreateAsync(dto, cancellationToken);
+            var modelId = await _userService.CreateAsync(dto, cancellationToken);
             /*if (string.IsNullOrEmpty(dto.Title))
             {
                 ModelState.AddModelError(nameof(dto.Title, "Поле Title должно содержать значение");
@@ -107,9 +107,9 @@ namespace Dashboard.Hosts.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateAsync(UpdateUserDto dto, CancellationToken cancellationToken)
         {
-            var model = /*await*/ _userService.UpdateAsync(dto, cancellationToken);
+            var model = await _userService.UpdateAsync(dto, cancellationToken);
             return Ok();
-            //if (/*await*/ TryUpdateModelAsync(model))
+            //if (await TryUpdateModelAsync(model))
             //{return Ok();}
             //else{return BadRequest();}
         }
@@ -122,7 +122,7 @@ namespace Dashboard.Hosts.Api.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteAsync(Guid id, CancellationToken cancellationToken)
         {
-            var modelId = /*await*/ _userService.DeleteAsync(id, cancellationToken);
+            var modelId = await _userService.DeleteAsync(id, cancellationToken);
             return Accepted();
         }
     }
