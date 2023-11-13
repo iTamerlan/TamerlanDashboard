@@ -8,27 +8,17 @@
 
 using Engine.Domain.Base;
 
-namespace Dashboard.Domain.Historys
+namespace Dashboard.Domain.Tags
 {
     /// <summary>
-    /// Сущность истории просмотра продукта.
+    /// Сущность тега.
     /// </summary>
-    public class History : BaseEntity
+    public class Tag : BaseEntity
     {
         /// <summary>
-        /// Автор объявления.
+        /// Заголовок.
         /// </summary>
-        public Guid AuthorId { get; set; }
-
-        /// <summary>
-        /// Родительский объект.
-        /// </summary>
-        public Guid ParrentId { get; set; }
-
-        /// <summary>
-        /// Дата создания.
-        /// </summary>
-        public DateTime DateCreated { get; set; }
+        public string Title { get; set; }
 
     }
 }

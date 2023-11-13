@@ -8,27 +8,17 @@
 
 using Engine.Contracts.Base;
 
-namespace Dashboard.Contracts.History
+namespace Dashboard.Contracts.Tag
 {
     /// <summary>
-    /// Сущность истории просмотра продукта.
+    /// Сущность тега.
     /// </summary>
-    public class CreateHistoryDto : BaseDto
+    public class CreateTagDto : BaseDto
     {
         /// <summary>
-        /// Автор объявления.
+        /// Заголовок.
         /// </summary>
-        public Guid AuthorId { get; set; }
-
-        /// <summary>
-        /// Родительский объект.
-        /// </summary>
-        public Guid ParrentId { get; set; }
-
-        /// <summary>
-        /// Дата создания.
-        /// </summary>
-        public DateTime DateCreated { get; set; }
+        public string Title { get; set; }
 
     }
 }
