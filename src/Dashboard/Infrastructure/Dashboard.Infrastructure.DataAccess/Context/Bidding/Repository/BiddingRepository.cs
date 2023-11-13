@@ -6,55 +6,55 @@
 // </auto-generated>
 // ------------------------------------------------------------------------------
 
-using Dashboard.Application.AppServices.Contexts.Post.Repositories;
+using Dashboard.Application.AppServices.Contexts.Bidding.Repositories;
 using Dashboard.Contracts;
-using Dashboard.Contracts.Post;
+using Dashboard.Contracts.Bidding;
 using Dashboard.Infrastructure.Repository;
 using System.Linq.Expressions;
 using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dashboard.Infrastructure.DataAccess.Contexts.Post.Repositories;
+namespace Dashboard.Infrastructure.DataAccess.Contexts.Bidding.Repositories;
 
-/// <inheritdoc cref="IPostRepository"/>
-public class PostRepository : IPostRepository
+/// <inheritdoc cref="IBiddingRepository"/>
+public class BiddingRepository : IBiddingRepository
 {
-    private readonly IRepository<Domain.Posts.Post> _repository;
+    private readonly IRepository<Domain.Biddings.Bidding> _repository;
 
     /// <inheritdoc />
-    public PostRepository(IRepository<Domain.Posts.Post> repository)
+    public BiddingRepository(IRepository<Domain.Biddings.Bidding> repository)
     {
         _repository = repository;
     }
 
     /// <inheritdoc />
-    public async Task<Guid> CreateAsync(Domain.Posts.Post model, CancellationToken cancellationToken)
+    public async Task<Guid> CreateAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken)
     {
         /*await*/ _repository.AddAsync(model);
         return model.Id;
     }
 
     /// <inheritdoc />
-    public Task<Domain.Posts.Post> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+    public Task<Domain.Biddings.Bidding> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         return _repository.GetByIdAsync(id, cancellationToken);
     }
 
     /// <inheritdoc />
-    public IQueryable<Domain.Posts.Post> GetAllAsync(CancellationToken cancellationToken)
+    public IQueryable<Domain.Biddings.Bidding> GetAllAsync(CancellationToken cancellationToken)
     {
         return _repository.GetAll();
     }
 
     /// <inheritdoc />
-    public async Task<Domain.Posts.Post> UpdateAsync(Domain.Posts.Post model, CancellationToken cancellationToken)
+    public async Task<Domain.Biddings.Bidding> UpdateAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken)
     {
         /*await*/ _repository.UpdateAsync(model);
         return model;
     }
 
     /// <inheritdoc />
-    public async Task<Guid> DeleteAsync(Domain.Posts.Post model, CancellationToken cancellationToken)
+    public async Task<Guid> DeleteAsync(Domain.Biddings.Bidding model, CancellationToken cancellationToken)
     {
         /*await*/ _repository.DeleteAsync(model);
         return model.Id;

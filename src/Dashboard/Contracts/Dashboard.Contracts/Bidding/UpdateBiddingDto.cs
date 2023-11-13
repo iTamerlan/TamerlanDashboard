@@ -8,12 +8,12 @@
 
 using Engine.Contracts.Base;
 
-namespace Dashboard.Contracts.Post
+namespace Dashboard.Contracts.Bidding
 {
     /// <summary>
     /// Сущность ПредложенияТоргов.
     /// </summary>
-    public class UpdatePostDto : BaseDto
+    public class UpdateBiddingDto : BaseDto
     {
         /// <summary>
         /// Текст комментария.

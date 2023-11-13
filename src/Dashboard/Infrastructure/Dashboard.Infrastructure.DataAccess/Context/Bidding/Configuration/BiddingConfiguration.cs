@@ -9,16 +9,16 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Dashboard.Infrastructure.DataAccess.Contexts.Post.Configuration
+namespace Dashboard.Infrastructure.DataAccess.Contexts.Bidding.Configuration
 {
     /// <summary>
-    /// Конфигурация таблицы Posts.
+    /// Конфигурация таблицы Biddings.
     /// </summary>
-    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Posts.Post>
+    internal class PostConfiguration : IEntityTypeConfiguration<Domain.Biddings.Bidding>
     {
-        public void Configure(EntityTypeBuilder<Domain.Posts.Post> builder)
+        public void Configure(EntityTypeBuilder<Domain.Biddings.Bidding> builder)
         {
-            builder.ToTable(nameof(Domain.Posts.Post));
+            builder.ToTable(nameof(Domain.Biddings.Bidding));
 
             builder.HasKey(p => p.Id);
             builder.Property(p => p.Id).ValueGeneratedOnAdd();

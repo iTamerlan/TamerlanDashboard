@@ -19,6 +19,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Bidding\GenBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenBiddingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bidding\GenCreateBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenCreateBiddingDto.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Bidding\GenUpdateBiddingDto.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GenUpdateBiddingDto.tt</DependentUpon>
+    </Compile>
     <Compile Update="Post\GenPostDto.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -197,6 +212,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Bidding\GenBiddingDto.tt">
+      <LastGenOutput>GenBiddingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bidding\GenCreateBiddingDto.tt">
+      <LastGenOutput>GenCreateBiddingDto.cs</LastGenOutput>
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+    </None>
+    <None Update="Bidding\GenUpdateBiddingDto.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GenUpdateBiddingDto.cs</LastGenOutput>
+    </None>
     <None Update="Post\GenCreatePostDto.tt">
       <LastGenOutput>GenCreatePostDto.cs</LastGenOutput>
       <Generator>TextTemplatingFilePreprocessor</Generator>
