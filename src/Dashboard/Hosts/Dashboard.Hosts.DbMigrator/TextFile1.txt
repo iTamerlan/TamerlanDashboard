@@ -8,4 +8,4 @@ Npgsql.EntityFrameworkCore.PostgreSQL
 
 
 EntityFrameworkCore\Add-Migration firstMigration
-EntityFrameworkCore\Update-Database
+EntityFrameworkCore\Update-Database 
